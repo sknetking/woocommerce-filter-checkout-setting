@@ -1,0 +1,9 @@
+.filter-price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.filter-price input{
+    margin:0px 5px;
+}
