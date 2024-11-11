@@ -71,6 +71,19 @@ function custom_product_filter_shortcode() {
 
     // Product listings section
     echo '<div id="filtered-products" style="width: 75%;">';
+	?>
+<form class="woocommerce-ordering" method="get">
+	<select name="orderby" class="orderby" aria-label="Shop order">
+					<option value="menu_order">Default sorting</option>
+					<option value="popularity">Sort by popularity</option>
+					<option value="rating" selected="selected">Sort by average rating</option>
+					<option value="date">Sort by latest</option>
+					<option value="price">Sort by price: low to high</option>
+					<option value="price-desc">Sort by price: high to low</option>
+			</select>
+	<input type="hidden" name="paged" value="1">
+	</form>
+<?php 
     echo do_shortcode('[products]'); // Display initial product list
     echo '</div>';
 
