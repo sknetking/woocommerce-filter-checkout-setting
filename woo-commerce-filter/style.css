@@ -7,3 +7,9 @@
 .filter-price input{
     margin:0px 5px;
 }
+
+.woocommerce-js .woocommerce-ordering {
+    margin: 0 0 1.5em;
+    width: fit-content;
+    float: inline-end;
+}
